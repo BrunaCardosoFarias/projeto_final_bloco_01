@@ -9,7 +9,7 @@ import loja.Sedam;
 import loja.Veiculo;
 import loja.util.Cores;
 import loja.VeiculoRepository;
-import loja.VeiculoRepositoryImpl;
+import loja.Controller;
 
 public class Menu {
 
@@ -29,7 +29,7 @@ public class Menu {
 		listaCarros.add(new Hatch(5));
 		listaCarros.add(new Hatch(6));
 
-		VeiculoRepository repository = new VeiculoRepositoryImpl(listaCarros);
+		VeiculoRepository repository = new Controller(listaCarros);
 
 		System.out.println("\nAlugar Carro\n");
 
